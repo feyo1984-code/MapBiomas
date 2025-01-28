@@ -39,7 +39,7 @@ Passos:
 
 6.Add no app.py ao Git HUB
 
-7. Faça um push das alterações do desktop para o repositório remoto
+7.Faça um push das alterações do desktop para o repositório remoto
 
 8.O Dashboard depois de dar um run streamlit app.py aparecerá em local server como uma página do Streamlit, na página do Streamlit inicie novo app em "New App"
 
@@ -80,9 +80,6 @@ Exemplo de Script
 
 Recursos Adicionais
 Documentação Oficial do MapBiomas: Acesse a documentação oficial para tutoriais e exemplos de uso.
-
-Licença
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 
 Este README atualizado inclui uma seção sobre a aplicação de extração de dados da Coleção 8 do MapBiomas usando o Google Earth Engine, com instruções detalhadas e um exemplo de script. Se precisar de mais alguma coisa, estou aqui para ajudar!
