@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Uso e Ocupação do Solo por Município Operado pela Sabesp</title>
+    <title>Uso e Ocupação do Solo conforme Classificação Mapbiomas - Coleção 8.0 nos Município Operado pela Sabesp</title>
 </head>
 <body>
     <h1>Uso e Ocupação do Solo por Município Operado pela Sabesp</h1>
