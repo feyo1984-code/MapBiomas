@@ -1,0 +1,3 @@
+[submodule "MapBiomas"]
+  path = MapBiomas
+  url = https://github.com/feyo1984-code/MapBiomas.git
