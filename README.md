@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Classificação do Uso e Ocupação do Solo por Município Operado pela Sabesp</title>
+    <title>Uso e Ocupação do Solo por Município Operado pela Sabesp</title>
 </head>
 <body>
-    <h1>Classificação do Uso e Ocupação do Solo por Município Operado pela Sabesp</h1>
+    <h1>Uso e Ocupação do Solo por Município Operado pela Sabesp</h1>
     <p>Este projeto utiliza Streamlit para visualizar a classificação do uso e ocupação do solo por município operado pela Sabesp. Os dados são carregados de dados e arquivos vetoriais e exibidos em um gráfico de pizza interativo.</p>
     <p>O dashboard pode ser visto em:</p>
     <p><a href="https://mapbiomas-app3.streamlit.app/">https://mapbiomas-app3.streamlit.app/</a></p>
@@ -71,5 +72,8 @@
     <p>Documentação Oficial do MapBiomas: Acesse a documentação oficial para tutoriais e exemplos de uso.</p>
 
     <p>Este README atualizado inclui uma seção sobre a aplicação de extração de dados da Coleção 8 do MapBiomas usando o Google Earth Engine, com instruções detalhadas e um exemplo de script. Se precisar de mais alguma coisa, estou aqui para ajudar!</p>
+
+<p>Criado pela Superintendência de Engenharia de Inovação, editado por Fernando Yogi.<p>
+
 </body>
 </html>
