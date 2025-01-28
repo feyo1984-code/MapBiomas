@@ -1,10 +1,6 @@
 import streamlit as st
-
-import dash
-from dash import dcc, html
 import plotly.graph_objects as go
 import pandas as pd
-from dash.dependencies import Input, Output
 
 # Carregar o arquivo Excel
 df = pd.read_excel(r'C:\Users\fyogi\Downloads\classes_area-km_por_municipiosabesp.xlsx')
