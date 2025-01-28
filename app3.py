@@ -2,8 +2,10 @@ import streamlit as st
 import plotly.graph_objects as go
 import pandas as pd
 
+# Título da página
+st.title("Classificação MapBiomas nos Municípios Operados pela Sabesp")
 # Carregar o arquivo Excel
-df = pd.read_excel(r'C:\Users\fyogi\Downloads\classes_area-km_por_municipiosabesp.xlsx')
+df = pd.read_excel("./classes_area-km_por_municipiosabesp.xlsx")
 # Preencher células vazias com zero
 df = df.fillna(0)
 
@@ -40,35 +42,40 @@ classes_uso = {
 }
 
 # Cria o app Dash
-app = dash.Dash(__name__)
+#app = dash.Dash(__name__)
 
 # Layout do Dash
-app.layout = html.Div([
+#app.layout = html.Div([
     # Título
-    html.H1("Distribuição de Áreas por Município e Classe de Uso do Solo", style={'textAlign': 'center'}),
 
     # Lista suspensa para selecionar o município
-    dcc.Dropdown(
-        id='municipio-dropdown',
-        options=[{'label': municipio, 'value': municipio} for municipio in df['Município'].unique()],
-        value=df['Município'].unique()[0],  # Valor inicial do dropdown
-        style={'width': '50%', 'margin': 'auto'}
-    ),
+    # Lista suspensa para selecionar o município
+municipio_selecionado = st.selectbox(
+    'Selecione o Município',
+    options=df['Município'].unique(),
+    index=0  # Valor inicial do dropdown
+)
+    #dcc.Dropdown(
+        #id='municipio-dropdown',
+        #options=[{'label': municipio, 'value': municipio} for municipio in df['Município'].unique()],
+       # value=df['Município'].unique()[0],  # Valor inicial do dropdown
+        #style={'width': '50%', 'margin': 'auto'}
+    #),
 
     # Gráfico de pizza
-    dcc.Graph(id='pie-chart'),
+    #dcc.Graph(id='pie-chart'),
 
     # Exibição das áreas em Km²
-    html.Div(id='area-info', style={'margin-top': '20px', 'textAlign': 'center'})
-])
+    #html.Div(id='area-info', style={'margin-top': '20px', 'textAlign': 'center'})
+#])
 
 # Função para atualizar o gráfico e as áreas conforme o município
-@app.callback(
-    [Output('pie-chart', 'figure'),
-     Output('area-info', 'children')],
-    [Input('municipio-dropdown', 'value')]
-)
-def update_graph(municipio_selecionado):
+#@app.callback(
+    #[Output('pie-chart', 'figure'),
+    # Output('area-info', 'children')],
+    #[Input('municipio-dropdown', 'value')]
+#)
+#def update_graph(municipio_selecionado):
     # Filtra os dados para o município selecionado
     df_filtrado = df[df['Município'] == municipio_selecionado]
 
@@ -88,9 +95,15 @@ def update_graph(municipio_selecionado):
     area_text = [f'{classe}: {area:.2f} km²' for classe, area in areas.items()]
 
     # Exibir as áreas como uma lista no HTML
-    area_info = html.Ul([html.Li(area) for area in area_text])
+    # area_info = html.Ul([html.Li(area) for area in area_text])
+    #Exibe o gráfico
+    st.plotly_chart(fig)
 
-    return fig, area_info
+    #return fig, area_info
+
+# Rodar o servidor Dash
+#if __name__ == '__main__':
+    #app.run_server(debug=True, use_reloader=False)
 
 # Rodar o servidor Dash
 if __name__ == '__main__':
