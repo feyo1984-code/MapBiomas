@@ -17,10 +17,10 @@ Abra contas (gratuitas para este volume de publicação):
 
 Você pode instalar todos os pacotes necessários usando o seguinte comando:
 
-!pip install streamlit
-!pip install pandas
-!pip install plotly
-!pip install openpyxl
+- !pip install streamlit
+- !pip install pandas
+- !pip install plotly
+- !pip install openpyxl
 
 Passos:
 Faça o clone do repositório no Git HUB para submeter os arquivos necessários para fazer o deploy da aplicação, a planilha com as classificações dos Muniípios, a lista de requirements.txt (pacotes), o arquivo escrito em Python necessário para criar um lista suspensa para seleção das labels dos municípios e gerar os gráficos 
