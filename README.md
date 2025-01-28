@@ -2,6 +2,10 @@
 
 Este projeto utiliza Streamlit para visualizar a classificação do uso e ocupação do solo por município operado pela Sabesp. Os dados são carregados de dados e arquivos vetoriais e exibidos em um gráfico de pizza interativo.
 
+O dashboard pode ser visto em:
+
+https://mapbiomas-app3.streamlit.app/
+
 ## Requisitos
 
 Certifique-se de ter os seguintes pacotes instalados:
@@ -15,7 +19,7 @@ Abra contas (gratuitas para este volume de publicação):
 - Git HUB;
 - Streamlit
 
-Você pode instalar todos os pacotes necessários usando o seguinte comando:
+Você pode instalar todos os pacotes necessários usando o comando !pip install:
 
 - !pip install streamlit
 - !pip install pandas
@@ -23,11 +27,25 @@ Você pode instalar todos os pacotes necessários usando o seguinte comando:
 - !pip install openpyxl
 
 Passos:
-Faça o clone do repositório no Git HUB para submeter os arquivos necessários para fazer o deploy da aplicação, a planilha com as classificações dos Muniípios, a lista de requirements.txt (pacotes), o arquivo escrito em Python necessário para criar um lista suspensa para seleção das labels dos municípios e gerar os gráficos 
+1.Faça o clone do repositório no Git HUB para submeter os arquivos necessários para fazer o deploy da aplicação, a planilha com as classificações dos Muniípios, a lista de requirements.txt (pacotes), o arquivo escrito em Python necessário para criar um lista suspensa para seleção das labels dos municípios e gerar os gráficos 
 
-Para toda alteração dos arquivos no desktop será necessário um Commit para atualização dos dados no Git HUB
+2.Adicione uma nova origem remota ao repositório local
 
-Execute o script Streamlit no seu terminal bash com: streamlit run app.py
+3.Para toda alteração dos arquivos no desktop será necessário um Commit para atualização dos dados no Git HUB com Branch Upstream
+
+4.Defina uma mensagem de commit como "Atualizando arquivos para Deploy" 
+
+5.Execute o script Streamlit no seu terminal bash com: streamlit run app.py
+
+6.Add no app.py ao Git HUB
+
+7. Faça um push das alterações do desktop para o repositório remoto
+
+8.O Dashboard depois de dar um run streamlit app.py aparecerá em local server como uma página do Streamlit, na página do Streamlit inicie novo app em "New App"
+
+9.Preencha as informações do repositório, branch, app utilizado e caminho do arquivo
+
+10.Deploy!
 
 
 Estrutura do Projeto
