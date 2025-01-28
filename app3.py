@@ -77,34 +77,30 @@ municipio_selecionado = st.selectbox(
 #)
 #def update_graph(municipio_selecionado):
     # Filtra os dados para o município selecionado
-    df_filtrado = df[df['Município'] == municipio_selecionado]
+df_filtrado = df[df['Município'] == municipio_selecionado]
 
     # Garantir que todas as classes de uso estejam presentes no gráfico de pizza
-    areas = {classe: df_filtrado[classe].sum() for classe in classes_uso.keys()}
+areas = {classe: df_filtrado[classe].sum() for classe in classes_uso.keys()}
 
     # Remover classes com área zero
-    areas = {classe: area for classe, area in areas.items() if area > 0}
+areas = {classe: area for classe, area in areas.items() if area > 0}
 
     # Cria o gráfico de pizza com cores personalizadas
-    fig = go.Figure(data=[go.Pie(labels=list(areas.keys()), values=list(areas.values()), hole=0.3,
+fig = go.Figure(data=[go.Pie(labels=list(areas.keys()), values=list(areas.values()), hole=0.3,
                                  marker=dict(colors=[classes_uso[classe] for classe in areas.keys()]))])
 
-    fig.update_layout(title=f'Distribuição de Áreas por Classe de Uso do Solo - {municipio_selecionado}', title_x=0.5)
+fig.update_layout(title=f'Distribuição de Áreas por Classe de Uso do Solo - {municipio_selecionado}', title_x=0.5)
 
     # Criar o texto com as áreas em Km²
-    area_text = [f'{classe}: {area:.2f} km²' for classe, area in areas.items()]
+area_text = [f'{classe}: {area:.2f} km²' for classe, area in areas.items()]
 
     # Exibir as áreas como uma lista no HTML
     # area_info = html.Ul([html.Li(area) for area in area_text])
     #Exibe o gráfico
-    st.plotly_chart(fig)
+st.plotly_chart(fig)
 
     #return fig, area_info
 
 # Rodar o servidor Dash
 #if __name__ == '__main__':
     #app.run_server(debug=True, use_reloader=False)
-
-# Rodar o servidor Dash
-if __name__ == '__main__':
-    app.run_server(debug=True, use_reloader=False)
