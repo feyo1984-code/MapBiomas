@@ -33,7 +33,7 @@
 
     <h2>Passos</h2>
     <ol>
-        <li>Faça o clone do repositório no Git HUB para submeter os arquivos necessários para fazer o deploy da aplicação, a planilha com as classificações dos Municípios, a lista de requirements.txt (pacotes), o arquivo escrito em Python necessário para criar uma lista suspensa para seleção das labels dos municípios e gerar os gráficos.</li>
+        <li>Faça o clone do repositório no Git HUB para submeter os arquivos necessários para fazer o deploy da aplicação, a base de dados para Classificações dos Municípios, a lista de requirements.txt (pacotes), o arquivo escrito em Python necessário para criar uma lista suspensa para seleção das labels dos municípios para gerar os gráficos.</li>
         <li>Adicione uma nova origem remota ao repositório local.</li>
         <li>Para toda alteração dos arquivos no desktop será necessário um Commit para atualização dos dados no Git HUB com Branch Upstream.</li>
         <li>Defina uma mensagem de commit como "Atualizando arquivos para Deploy".</li>
