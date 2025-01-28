@@ -9,7 +9,7 @@
     <p>Este projeto utiliza Streamlit para visualizar a classificação do uso e ocupação do solo por município operado pela Sabesp. Os dados são carregados de dados e arquivos vetoriais e exibidos em um gráfico de pizza interativo.</p>
     <p>O dashboard pode ser visto em:</p>
     <p><a href="https://mapbiomas-app3.streamlit.app/">https://mapbiomas-app3.streamlit.app/</a></p>
-    <img src="figura0.png" alt="Figura 0">
+    <img src="fig0.png" alt="Figura 0">
 
     <h2>Requisitos</h2>
     <p>Certifique-se de ter os seguintes pacotes instalados:</p>
@@ -66,7 +66,7 @@
     <h2>Extração de Dados da Coleção 8 do MapBiomas</h2>
     <p>Este projeto também inclui uma aplicação para extração de dados da Coleção 8 do MapBiomas usando o Google Earth Engine (GEE). A Coleção 8 do MapBiomas fornece mapas anuais de cobertura e uso da terra no Brasil entre 1985 e 2023.</p>
     <p><a href="https://ee-feyo1984.projects.earthengine.app/view/mapbiomas">https://ee-feyo1984.projects.earthengine.app/view/mapbiomas</a></p>
-    <img src="figura1.png" alt="Figura 1">
+    <img src="fig1.png" alt="Figura 1">
 
     <p>Execute o Script de Extração: Utilize o script fornecido pelo MapBiomas para extrair os dados desejados. O script pode ser encontrado no repositório do MapBiomas no GEE.</p>
     <p>Exemplo de Script</p>
